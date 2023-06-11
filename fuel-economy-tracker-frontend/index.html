@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuel Economy Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Fuel Economy Tracker</h1>
+
+    <form id="fuelEntryForm">
+        <label for="distance">Distance (km):</label>
+        <input type="number" id="distance" required>
+        <br>
+        <label for="liters">Liters:</label>
+        <input type="number" id="liters" required>
+        <br>
+        <label for="date">Date:</label>
+        <input type="date" id="date" required>
+        <br>
+        <button type="button" onclick="addFuelEntry()">Add Entry</button>
+    </form>
+
+    <table id="fuelEntriesTable">
+        <tr>
+            <th>Date</th>
+            <th>Distance (km)</th>
+            <th>Liters</th>
+        </tr>
+    </table>
+
+    <h2>Average Fuel Consumption</h2>
+    <p id="averageFuelConsumption"></p>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
